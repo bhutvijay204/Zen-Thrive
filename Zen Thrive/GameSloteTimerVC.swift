@@ -9,6 +9,7 @@ import UIKit
 
 class GameSloteTimerVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    
     let ImgIcons = [#imageLiteral(resourceName: "Artboard 15") , #imageLiteral(resourceName: "Artboard 14"), #imageLiteral(resourceName: "Artboard 18"), #imageLiteral(resourceName: "Artboard 20"), #imageLiteral(resourceName: "Artboard 16"), #imageLiteral(resourceName: "Artboard 13"), #imageLiteral(resourceName: "Artboard 22"), #imageLiteral(resourceName: "Artboard 17"), #imageLiteral(resourceName: "Artboard 21")]
     
     @IBOutlet weak var machineImageView: UIImageView!
@@ -22,6 +23,13 @@ class GameSloteTimerVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
 
     var timer : Timer?
     var timeMedi = 60
+    
+    var visibleCount = 0 {
+        didSet {
+            visibleCountLabel.text = "Visible: \(visibleCount)"
+        }
+    }
+
     var Round = 0 {
         didSet {
             if visibleCount == 7 {
@@ -37,7 +45,7 @@ class GameSloteTimerVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
             }
             
         }
-    }
+    
     
     var chances = 15 {
         didSet {
@@ -58,12 +66,6 @@ class GameSloteTimerVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
         }
     }
     
-    var visibleCount = 0 {
-        didSet {
-            visibleCountLabel.text = "Visible: \(visibleCount)"
-        }
-    }
-
     var imageViewsVisibility = [Bool](repeating: false, count: 9)
 
     override func viewDidLoad() {
@@ -79,6 +81,7 @@ class GameSloteTimerVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
         StartTimer()
 
     }
+
     func StartTimer() {
 
         DispatchQueue.main.async {
@@ -198,7 +201,9 @@ class GameSloteTimerVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
     }
     
     func checkWin() {
+        
          let selectedImageIndex = selectedImageIndex
+        
         let machineIndices = (0..<pickerView.numberOfComponents).map { pickerView.selectedRow(inComponent: $0) % ImgIcons.count }
         
         let counts = machineIndices.reduce(into: [:]) { counts, index in counts[index, default: 0] += 1 }
@@ -222,6 +227,7 @@ class GameSloteTimerVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
         alert.addAction(okButton)
         self.present(alert, animated: true, completion: nil)
     }
+
     func viewAlertRoundComplete(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in
@@ -236,6 +242,7 @@ class GameSloteTimerVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
         scoreLabel.text = "Score: \(points)"
         chanceLabel.text = "Chance: \(chances)"
     }
+
     func restartGame() {
         points = 0
         chances = 15
@@ -296,7 +303,5 @@ class GameSloteTimerVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
             }
         }
     }
+
 }
-
-
-
