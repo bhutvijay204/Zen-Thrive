@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD66B2DE2BF85E860077C4EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66B2DD2BF85E860077C4EA /* AppDelegate.swift */; };
+		DD66B2E02BF85E860077C4EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66B2DF2BF85E860077C4EA /* SceneDelegate.swift */; };
+		DD66B2E22BF85E860077C4EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66B2E12BF85E860077C4EA /* ViewController.swift */; };
+		DD66B2E52BF85E860077C4EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD66B2E32BF85E860077C4EA /* Main.storyboard */; };
+		DD66B2E72BF85E870077C4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD66B2E62BF85E870077C4EA /* Assets.xcassets */; };
+		DD66B2EA2BF85E870077C4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD66B2E82BF85E870077C4EA /* LaunchScreen.storyboard */; };
+		DD66B2F22BF86E030077C4EA /* GameSlotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66B2F12BF86E030077C4EA /* GameSlotVC.swift */; };
+		DD66B2F42BF86E9E0077C4EA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66B2F32BF86E9E0077C4EA /* Models.swift */; };
+		DD66B2F62BF86EB80077C4EA /* Utillities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66B2F52BF86EB80077C4EA /* Utillities.swift */; };
+		DD66B2F82BF87FF30077C4EA /* Corner Ext++.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66B2F72BF87FF30077C4EA /* Corner Ext++.swift */; };
+		DD66B2FA2BF8CDBF0077C4EA /* GameSloteTimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66B2F92BF8CDBF0077C4EA /* GameSloteTimerVC.swift */; };
+		DD66B2FC2BF8D04D0077C4EA /* QuizHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66B2FB2BF8D04D0077C4EA /* QuizHistoryVC.swift */; };
+		DD66B2FE2BF8D0910077C4EA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66B2FD2BF8D0910077C4EA /* TableViewCell.swift */; };
+		DD66B3002BF8DA300077C4EA /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66B2FF2BF8DA300077C4EA /* AboutUsVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DD66B2DA2BF85E860077C4EA /* Zen Thrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zen Thrive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD66B2DD2BF85E860077C4EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD66B2DF2BF85E860077C4EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DD66B2E12BF85E860077C4EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD66B2E42BF85E860077C4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD66B2E62BF85E870077C4EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD66B2E92BF85E870077C4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD66B2EB2BF85E870077C4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD66B2F12BF86E030077C4EA /* GameSlotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSlotVC.swift; sourceTree = "<group>"; };
+		DD66B2F32BF86E9E0077C4EA /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		DD66B2F52BF86EB80077C4EA /* Utillities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utillities.swift; sourceTree = "<group>"; };
+		DD66B2F72BF87FF30077C4EA /* Corner Ext++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Corner Ext++.swift"; sourceTree = "<group>"; };
+		DD66B2F92BF8CDBF0077C4EA /* GameSloteTimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSloteTimerVC.swift; sourceTree = "<group>"; };
+		DD66B2FB2BF8D04D0077C4EA /* QuizHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHistoryVC.swift; sourceTree = "<group>"; };
+		DD66B2FD2BF8D0910077C4EA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		DD66B2FF2BF8DA300077C4EA /* AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD66B2D72BF85E860077C4EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD66B2D12BF85E860077C4EA = {
+			isa = PBXGroup;
+			children = (
+				DD66B2DC2BF85E860077C4EA /* Zen Thrive */,
+				DD66B2DB2BF85E860077C4EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD66B2DB2BF85E860077C4EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD66B2DA2BF85E860077C4EA /* Zen Thrive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD66B2DC2BF85E860077C4EA /* Zen Thrive */ = {
+			isa = PBXGroup;
+			children = (
+				DD66B2DD2BF85E860077C4EA /* AppDelegate.swift */,
+				DD66B2DF2BF85E860077C4EA /* SceneDelegate.swift */,
+				DD66B2E12BF85E860077C4EA /* ViewController.swift */,
+				DD66B2F72BF87FF30077C4EA /* Corner Ext++.swift */,
+				DD66B2F12BF86E030077C4EA /* GameSlotVC.swift */,
+				DD66B2F92BF8CDBF0077C4EA /* GameSloteTimerVC.swift */,
+				DD66B2F32BF86E9E0077C4EA /* Models.swift */,
+				DD66B2FB2BF8D04D0077C4EA /* QuizHistoryVC.swift */,
+				DD66B2FD2BF8D0910077C4EA /* TableViewCell.swift */,
+				DD66B2F52BF86EB80077C4EA /* Utillities.swift */,
+				DD66B2FF2BF8DA300077C4EA /* AboutUsVC.swift */,
+				DD66B2E32BF85E860077C4EA /* Main.storyboard */,
+				DD66B2E62BF85E870077C4EA /* Assets.xcassets */,
+				DD66B2E82BF85E870077C4EA /* LaunchScreen.storyboard */,
+				DD66B2EB2BF85E870077C4EA /* Info.plist */,
+			);
+			path = "Zen Thrive";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD66B2D92BF85E860077C4EA /* Zen Thrive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD66B2EE2BF85E870077C4EA /* Build configuration list for PBXNativeTarget "Zen Thrive" */;
+			buildPhases = (
+				DD66B2D62BF85E860077C4EA /* Sources */,
+				DD66B2D72BF85E860077C4EA /* Frameworks */,
+				DD66B2D82BF85E860077C4EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zen Thrive";
+			productName = "Zen Thrive";
+			productReference = DD66B2DA2BF85E860077C4EA /* Zen Thrive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD66B2D22BF85E860077C4EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					DD66B2D92BF85E860077C4EA = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = DD66B2D52BF85E860077C4EA /* Build configuration list for PBXProject "Zen Thrive" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD66B2D12BF85E860077C4EA;
+			productRefGroup = DD66B2DB2BF85E860077C4EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD66B2D92BF85E860077C4EA /* Zen Thrive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD66B2D82BF85E860077C4EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD66B2EA2BF85E870077C4EA /* LaunchScreen.storyboard in Resources */,
+				DD66B2E72BF85E870077C4EA /* Assets.xcassets in Resources */,
+				DD66B2E52BF85E860077C4EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD66B2D62BF85E860077C4EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD66B2F22BF86E030077C4EA /* GameSlotVC.swift in Sources */,
+				DD66B2F62BF86EB80077C4EA /* Utillities.swift in Sources */,
+				DD66B2E22BF85E860077C4EA /* ViewController.swift in Sources */,
+				DD66B2DE2BF85E860077C4EA /* AppDelegate.swift in Sources */,
+				DD66B2FA2BF8CDBF0077C4EA /* GameSloteTimerVC.swift in Sources */,
+				DD66B2FE2BF8D0910077C4EA /* TableViewCell.swift in Sources */,
+				DD66B2F82BF87FF30077C4EA /* Corner Ext++.swift in Sources */,
+				DD66B2FC2BF8D04D0077C4EA /* QuizHistoryVC.swift in Sources */,
+				DD66B2E02BF85E860077C4EA /* SceneDelegate.swift in Sources */,
+				DD66B2F42BF86E9E0077C4EA /* Models.swift in Sources */,
+				DD66B3002BF8DA300077C4EA /* AboutUsVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD66B2E32BF85E860077C4EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD66B2E42BF85E860077C4EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD66B2E82BF85E870077C4EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD66B2E92BF85E870077C4EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD66B2EC2BF85E870077C4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD66B2ED2BF85E870077C4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD66B2EF2BF85E870077C4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Zen Thrive/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Zen Thrive";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Hiitu.Zen-Thrive";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DD66B2F02BF85E870077C4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Zen Thrive/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Zen Thrive";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Hiitu.Zen-Thrive";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD66B2D52BF85E860077C4EA /* Build configuration list for PBXProject "Zen Thrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD66B2EC2BF85E870077C4EA /* Debug */,
+				DD66B2ED2BF85E870077C4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD66B2EE2BF85E870077C4EA /* Build configuration list for PBXNativeTarget "Zen Thrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD66B2EF2BF85E870077C4EA /* Debug */,
+				DD66B2F02BF85E870077C4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD66B2D22BF85E860077C4EA /* Project object */;
+}
