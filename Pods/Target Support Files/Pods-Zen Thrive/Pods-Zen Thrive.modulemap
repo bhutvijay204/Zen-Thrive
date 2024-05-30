@@ -1,0 +1,6 @@
+framework module Pods_Zen_Thrive {
+  umbrella header "Pods-Zen Thrive-umbrella.h"
+
+  export *
+  module * { export * }
+}

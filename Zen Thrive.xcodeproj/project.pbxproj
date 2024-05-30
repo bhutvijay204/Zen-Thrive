@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B562E25F2901C246A9B3817 /* Pods_Zen_Thrive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1FC059671B341C04139AE6 /* Pods_Zen_Thrive.framework */; };
 		DD66B2DE2BF85E860077C4EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66B2DD2BF85E860077C4EA /* AppDelegate.swift */; };
 		DD66B2E02BF85E860077C4EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66B2DF2BF85E860077C4EA /* SceneDelegate.swift */; };
 		DD66B2E22BF85E860077C4EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66B2E12BF85E860077C4EA /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B1FC059671B341C04139AE6 /* Pods_Zen_Thrive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zen_Thrive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		431AC6963A4A3DA5DFA24407 /* Pods-Zen Thrive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zen Thrive.release.xcconfig"; path = "Target Support Files/Pods-Zen Thrive/Pods-Zen Thrive.release.xcconfig"; sourceTree = "<group>"; };
+		B0167716FB9FB60268DB20B4 /* Pods-Zen Thrive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zen Thrive.debug.xcconfig"; path = "Target Support Files/Pods-Zen Thrive/Pods-Zen Thrive.debug.xcconfig"; sourceTree = "<group>"; };
 		DD66B2DA2BF85E860077C4EA /* Zen Thrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zen Thrive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD66B2DD2BF85E860077C4EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD66B2DF2BF85E860077C4EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B562E25F2901C246A9B3817 /* Pods_Zen_Thrive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,8 @@
 			children = (
 				DD66B2DC2BF85E860077C4EA /* Zen Thrive */,
 				DD66B2DB2BF85E860077C4EA /* Products */,
+				F215CB59A3D708CD5A0765B2 /* Pods */,
+				F5F1774165B85E4EF226430C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +98,24 @@
 			path = "Zen Thrive";
 			sourceTree = "<group>";
 		};
+		F215CB59A3D708CD5A0765B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0167716FB9FB60268DB20B4 /* Pods-Zen Thrive.debug.xcconfig */,
+				431AC6963A4A3DA5DFA24407 /* Pods-Zen Thrive.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F5F1774165B85E4EF226430C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B1FC059671B341C04139AE6 /* Pods_Zen_Thrive.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,6 +123,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD66B2EE2BF85E870077C4EA /* Build configuration list for PBXNativeTarget "Zen Thrive" */;
 			buildPhases = (
+				291FFF7BFA0D4B1D2DDAC490 /* [CP] Check Pods Manifest.lock */,
 				DD66B2D62BF85E860077C4EA /* Sources */,
 				DD66B2D72BF85E860077C4EA /* Frameworks */,
 				DD66B2D82BF85E860077C4EA /* Resources */,
@@ -156,6 +182,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		291FFF7BFA0D4B1D2DDAC490 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zen Thrive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD66B2D62BF85E860077C4EA /* Sources */ = {
@@ -314,6 +365,7 @@
 		};
 		DD66B2EF2BF85E870077C4EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0167716FB9FB60268DB20B4 /* Pods-Zen Thrive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,6 +398,7 @@
 		};
 		DD66B2F02BF85E870077C4EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 431AC6963A4A3DA5DFA24407 /* Pods-Zen Thrive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
