@@ -1,0 +1,1 @@
+window._CCSettings={platform:"ios",groupList:["default"],collisionMatrix:[[true]],hasResourcesBundle:true,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db://assets/MainScene/MainScene.fire",orientation:"",server:"",jsList:["assets/Script/App/EXUIFrame/lib/mobx.js","assets/Script/App/UIFrame/lib/mobx.js","assets/code/public/lib/mobx.js"]};

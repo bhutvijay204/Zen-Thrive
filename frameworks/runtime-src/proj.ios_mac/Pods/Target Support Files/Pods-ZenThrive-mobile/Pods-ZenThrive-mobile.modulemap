@@ -1,0 +1,6 @@
+framework module Pods_ZenThrive_mobile {
+  umbrella header "Pods-ZenThrive-mobile-umbrella.h"
+
+  export *
+  module * { export * }
+}
